@@ -3,13 +3,13 @@ from openpyxl import *
 from proxy import *
 
 try:
-    doc_name = input('Введите название документа(без .xlsx): ')
+    doc_name = input('Введите название документа (без .xlsx): ')
     wb = load_workbook('исходники/{}.xlsx'.format(doc_name))
     ws = wb.active
     last = len(ws['B'])
 except FileNotFoundError as err:
-    print('Такой файл в папке исходники не найден. Попробуйте снова')
-    sleep = input()
+    print("Такой файл не найден. Попробуйте снова (файл должен лежать в папке 'исходники')")
+    sleep = input('Нажмите любую клавишу, чтобы завершить работу программы')
     raise SystemExit
 
 
