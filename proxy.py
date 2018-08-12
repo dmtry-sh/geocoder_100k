@@ -56,8 +56,8 @@ class Proxy(object):
                 continue
         return None
 
-proxy = Proxy()
-proxy_ip = proxy.get_proxy()
-for i in range(20):
-    print(i + 1, proxy_ip)
-    proxy_ip = proxy.next_server()
+#proxy = Proxy()
+#proxy_ip = proxy.get_proxy()
+#for i in range(20):
+#    print(i + 1, proxy_ip)
+#    proxy_ip = proxy.next_server()
